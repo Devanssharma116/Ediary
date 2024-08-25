@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+settings_path = "eDiary_ManagementSystem/eDiary_ManagementSystem/settings.py"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +15,7 @@ SECRET_KEY = 'id6=b(ven$mqn)8u47o+pu=c5d))v634zt3+b6^n$fwc0^^7@#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # /////////////
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = [".vercel.app",'localhost','127.0.0.1']
 # /////////////////
 
 # Application definition
@@ -112,3 +113,5 @@ MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+# with open(settings_path, 'r') as file:
+#     settings_content = file.read()
